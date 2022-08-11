@@ -18,6 +18,7 @@ Class Database
     {
         $conn =  new PDO('mysql:host='.$this->host .';dbname='.$this->db, $this->user, $this->pass);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
         return  $conn;
     }
 }
