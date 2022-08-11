@@ -24,9 +24,6 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-function sendImport(){
-    alert('salvo com sucesso!')
-}
 
 function showSlides(n) {
     let i;
@@ -40,5 +37,5 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    dots[slideIndex-1].className += " active";
+    // dots[slideIndex-1].className += " active";
 }
