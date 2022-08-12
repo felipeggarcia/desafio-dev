@@ -47,3 +47,9 @@ function validaCPF($cpf): bool
 function validaHora($hora){
     return  preg_match("#([0-1]\d|2[0-3]):[0-5]\d:[0-5]\d#", $hora);
 }
+function formataCPF($cpf){
+    return substr($cpf, 0, 3).'.'.substr($cpf, 3, 3).'.'.substr($cpf, 6, 3).'-'.substr($cpf, 9, 2);
+}
+function formataDinheiro($valor){
+    return number_format(round( $valor,2, PHP_ROUND_HALF_DOWN),2,',','');
+}
