@@ -1,6 +1,12 @@
 <?php
 require_once '../models/database.php';
 require_once '../lib/functions.php';
+//voltar aqui depois
+//o que ainda falta:
+//redirecionar a página para tabelas, dizendo fazendo um relatório do que foi feito
+// gerar erro de inserção no bd, dados inválidos e dados duplicados
+//e tmb o que deu certo
+// :)
 
 if(isset($_FILES['file-cnab'])){
     $con = new Database();
