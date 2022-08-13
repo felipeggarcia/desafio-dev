@@ -1,5 +1,5 @@
 <?php
-require_once '../../models/database.php';
+require_once '../models/database.php';
 require_once '../functions.php';
 
 $objJson=json_decode(file_get_contents('php://input'));
@@ -59,7 +59,7 @@ if(isset($objJson->string_cnab)){
     if($countErros==0&&$countSucessos>0)$response =  '{"error":0, "sucess":1,"message":';
     if($countErros>0&&$countSucessos==0)$response =  '{"error":1, "sucess":0,"message":';
     if($countErros==0&&$countSucessos==0)$response =  '{"error":0, "sucess":0,"message":';
-$response.='"Foram feitas '.($countErros+$countSucessos).' tentativas de inserção de dados, onde '.$countSucessos.' foram um sucesso e '.$countErros.' falharam."}';
+    $response.='"Foram feitas '.($countErros+$countSucessos).' tentativas de inserção de dados, onde '.$countSucessos.' foram um sucesso e '.$countErros.' falharam."}';
     print_r(($response));
 
  }else{
