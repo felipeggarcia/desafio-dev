@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>Desafio Dev</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="lib/css/styles.css">
 </head>
 <body>
 <section class="navigation w3-metro-light-blue w3-container">
@@ -18,7 +18,7 @@
         <div class="links">
             <a href="pages/sobre.php" >SOBRE</a>-
             <a href="pages/importacao.php" >IMPORTAÇÃO</a>-
-            <a href="pages/tabelas.php" >TABELAS</a>-
+            <a href="pages/resgistro_transicoes.php" >REGISTROS</a>-
             <a href="pages/documentacao.php" >DOCUMENTAÇÃO</a>
         </div>
     </nav>
