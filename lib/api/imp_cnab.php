@@ -1,5 +1,5 @@
 <?php
-require_once '../models/database.php';
+require_once '../../models/database.php';
 require_once '../functions.php';
 
 $objJson=json_decode(file_get_contents('php://input'));
