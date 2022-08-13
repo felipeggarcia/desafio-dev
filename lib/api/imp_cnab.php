@@ -1,17 +1,11 @@
 <?php
 require_once '../models/database.php';
 require_once '../functions.php';
-//voltar aqui depois
-//o que ainda falta:
-//redirecionar a página para tabelas, fazendo um relatório do que foi feito
-// gerar erro de inserção no bd, dados inválidos e dados duplicados
-//e tmb o que deu certo
-// :)
+
 $objJson=json_decode(file_get_contents('php://input'));
 if(isset($objJson->string_cnab)){
     $con = new Database();
     $con=$con->connect();
-//
     $arrCnab=decodificarCNAB($objJson->string_cnab);
     $consulta = $con->query("SELECT * FROM tipo_transicao");
     $arrTipo=[];
