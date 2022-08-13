@@ -2,7 +2,7 @@
     <?php
     include 'head.html';
     include 'header.html';
-    require_once '../models/database.php';
+    require_once '../lib/models/database.php';
     require_once '../lib/functions.php';
     $total=0;
     $objCon = new Database();
@@ -49,8 +49,6 @@
         </tr>
         <?php
 
-
-            //Exibir uma lista das operações importadas por lojas, e nesta lista deve conter um totalizador do saldo em cont
             $strQuery = "SELECT *  FROM transicoes
             JOIN tipo_transicao ON tipo_transicao.tipo=transicoes.tipo ";
             if($strFiltrarLoja)$strQuery.='WHERE nome_loja="'.$strFiltrarLoja.'"';
@@ -80,11 +78,6 @@
         echo '</table>';
         echo '<br>';
         echo 'TOTAL: R$ '.formataDinheiro($total);
-            //
-            //
-            //while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
-            //    echo "tipo: {$linha['tipo']} - descricao: {$linha['descricao']}<br />";
-            //}
 
         ?>
     </div>
