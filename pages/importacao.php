@@ -20,7 +20,7 @@
         $myfile = fopen($_FILES['file-cnab']['tmp_name'], "r") ;
         $strCnab=fread($myfile,filesize($_FILES['file-cnab']['tmp_name']));
         fclose($myfile);
-        $url = "http://$_SERVER[HTTP_HOST]/desafio-dev/lib/api/imp_cnab.php";
+        $url = "http://$_SERVER[HTTP_HOST]/lib/api/imp_cnab.php";
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_POST, true);
