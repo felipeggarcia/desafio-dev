@@ -10,8 +10,8 @@ Class Database
     public function __construct()
     {
         $this->user = "root";
-        $this->host = "localhost";
-        $this->pass = "";
+        $this->host = "root";
+        $this->pass = "root";
         $this->db = "desafio-dev";
     }
     public function connect()
