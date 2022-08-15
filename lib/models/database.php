@@ -10,7 +10,7 @@ Class Database
     public function __construct()
     {
         $this->user = "root";
-        $this->host = "root";
+        $this->host = "mysql_db";
         $this->pass = "root";
         $this->db = "desafio-dev";
     }
