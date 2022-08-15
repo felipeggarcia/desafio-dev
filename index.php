@@ -16,16 +16,14 @@
             <p>DESAFIODEV</p>
         </div>
         <div class="links">
-            <a href="pages/sobre.php" >SOBRE</a>-
             <a href="pages/importacao.php" >IMPORTAÇÃO</a>-
-            <a href="pages/resgistro_transicoes.php" >REGISTROS</a>-
-            <a href="pages/documentacao.php" >DOCUMENTAÇÃO</a>
+            <a href="pages/resgistro_transicoes.php" >REGISTROS</a>
         </div>
     </nav>
 </section>
 
 <section class="hero w3-padding-large w3-container">
-    <p>Bem vindo ao DESAFIO DEV desenvolvido por Felipe Garcia</p>
+    <p>Bem vindo ao DESAFIO DEV desenvolvido por <a style="color: #02be3b" href="https://www.linkedin.com/in/felipegoncalvesgarcia/">Felipe Garcia </a> </p>
     <p>Proposto por <img src="logo_bycoders_.svg" alt="bycoders_" width="150px"></p>
 </section>
 <script async type="text/javascript" src="script.js"></script>
