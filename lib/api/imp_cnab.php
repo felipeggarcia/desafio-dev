@@ -55,15 +55,14 @@ if(isset($objJson->string_cnab)){
         }
     }
     $response='';
-    if($countErros>0&&$countSucessos>0)$response = '{"error":1, "sucess":1,"message":';
-    if($countErros==0&&$countSucessos>0)$response =  '{"error":0, "sucess":1,"message":';
-    if($countErros>0&&$countSucessos==0)$response =  '{"error":1, "sucess":0,"message":';
+    if($countErros>0&&$countSucessos>0)$response = '{"error":1, "success":1,"message":';
+    if($countErros==0&&$countSucessos>0)$response =  '{"error":0, "success":1,"message":';
+    if($countErros>0&&$countSucessos==0)$response =  '{"error":1, "success":0,"message":';
     if($countErros==0&&$countSucessos==0)$response =  '{"error":0, "sucess":0,"message":';
     $response.='"Foram feitas '.($countErros+$countSucessos).' tentativas de inserção de dados, onde '.$countSucessos.' foram um sucesso e '.$countErros.' falharam."}';
-    print_r(($response));
-
+    echo $response;
  }else{
-    echo '{"error":1, "message":"JSON enviado incorretamente"}';
+    echo '{"error":1, "success":0, "message":"JSON enviado incorretamente"}';
 }
 
 

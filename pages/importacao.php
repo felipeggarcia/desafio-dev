@@ -36,9 +36,9 @@
         $resp = curl_exec($curl);
         curl_close($curl);
         $objResp=json_decode($resp);
-        if($objResp->error&&$objResp->sucess) echo '<div class="message warning">';
-        if(!$objResp->error&&$objResp->sucess) echo '<div class="message sucess">';
-        if($objResp->error&&!$objResp->sucess) echo '<div class="message error">';
+        if($objResp->error&&$objResp->success) echo '<div class="message warning">';
+        if(!$objResp->error&&$objResp->success) echo '<div class="message success">';
+        if($objResp->error&&!$objResp->success) echo '<div class="message error">';
 
         echo $objResp->message ;
         echo '</div>';

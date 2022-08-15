@@ -47,7 +47,7 @@ $resp = curl_exec($curl);
 $objResp = json_decode($resp);
 //
 echo '<p>Teste api de importação</p>';
-echo 'TESTE 1';
+echo 'TESTE ERRO JSON';
 echo '<br>';
 if ($objResp->error === 1 && $objResp->message === 'JSON enviado incorretamente') {
     echo '<span class="sucesso">SUCESSO</span>';
@@ -94,21 +94,22 @@ $data = '{"string_cnab":' . json_encode($strCnab) . '}';
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 $resp = curl_exec($curl);
 $objResp = json_decode($resp);
-echo 'TESTE 2';
+echo 'TESTE INSERIR DADOS';
 echo '<br>';
-if ($objResp->error === 0 && $objResp->sucess === 1 && $objResp->message === 'Foram feitas 21 tentativas de inserção de dados, onde 21 foram um sucesso e 0 falharam.') {
+if ($objResp->error === 0 && $objResp->success === 1 && $objResp->message === 'Foram feitas 21 tentativas de inserção de dados, onde 21 foram um sucesso e 0 falharam.') {
     echo '<span class="sucesso">SUCESSO</span>';
 } else {
     echo '<span class="erro">ERRO</span>';
 }
-//$data = '{"string_cnab":' . json_encode($strCnab) . '}';
+$data = '{"string_cnab":' . json_encode($strCnab) . '}';
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 $resp = curl_exec($curl);
 $objResp = json_decode($resp);
 echo '<br>';
-echo 'TESTE 3';
+echo 'TESTE DUPLICAÇÃO';
 echo '<br>';
-if ($objResp->error === 1 && $objResp->sucess === 0 && $objResp->message === 'Foram feitas 21 tentativas de inserção de dados, onde 0 foram um sucesso e 21 falharam.') {
+
+if ($objResp->error === 1 && $objResp->success === 0 && $objResp->message === 'Foram feitas 21 tentativas de inserção de dados, onde 0 foram um sucesso e 21 falharam.') {
     echo '<span class="sucesso">SUCESSO</span>';
 } else {
     echo '<span class="erro">ERRO</span>';
@@ -164,10 +165,11 @@ $data = '{"string_cnab":' . json_encode($strCnab) . '}';
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 $resp = curl_exec($curl);
 $objResp = json_decode($resp);
+
 echo '<br>';
-echo 'TESTE 4';
+echo 'TESTE STRING SEM ALGUNS CARACTERES';
 echo '<br>';
-if ($objResp->error === 1 && $objResp->sucess === 1 && $objResp->message === 'Foram feitas 19 tentativas de inserção de dados, onde 15 foram um sucesso e 4 falharam.') {
+if ($objResp->error === 1 && $objResp->success === 1 && $objResp->message === 'Foram feitas 19 tentativas de inserção de dados, onde 15 foram um sucesso e 4 falharam.') {
     echo '<span class="sucesso">SUCESSO</span>';
 } else {
     echo '<span class="erro">ERRO</span>';
