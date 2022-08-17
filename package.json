@@ -1,0 +1,24 @@
+{
+  "name": "desafio-dev",
+  "version": "1.0.0",
+  "description": "O objetivo consiste em parsear [este arquivo de texto(CNAB)](https://github.com/ByCodersTec/desafio-ruby-on-rails/blob/master/CNAB.txt) e salvar suas informações(transações financeiras) em uma base de dados a critério do candidato.",
+  "main": "script.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipeggarcia/desafio-dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipeggarcia/desafio-dev/issues"
+  },
+  "homepage": "https://github.com/felipeggarcia/desafio-dev#readme"
+}
