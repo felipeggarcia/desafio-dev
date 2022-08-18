@@ -5,9 +5,9 @@ services:
   php-env:
     build: .
     volumes:
-    - ./src:/var/www/html
+    - ./:/var/www/html
     ports:
-    - 8080:80
+    - 80:80
   mysql_db:
     image: mysql:latest
     command: --default-authentication-plugin=mysql_native_password
