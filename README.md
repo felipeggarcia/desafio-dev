@@ -10,7 +10,7 @@ Para a aplicação funcionar corretamente é necessário fazer a importação do
 1. Com o docker desktop rodando execude o comando "docker-compose up -d --build"
 2. Após terminar de executar entre em localhost:8001 acesse o phpmyadmin com as seguintes credenciais: Sevidor:mysql_db Usuário:root, Senha:root
 3. Crie um schema chamado "desafio-dev", abra ele e clique no botão importação, utilize o arquivo desafio-dev-importacao.sql
-4. Agora a aplicação deve funcionar, acesse loclahost para acessar o desafio-dev
+4. Agora a aplicação deve funcionar, acesse localhost para acessar o desafio-dev
 
 # Descrição do projeto
 
