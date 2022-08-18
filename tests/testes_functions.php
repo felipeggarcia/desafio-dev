@@ -127,7 +127,7 @@ echo '<p>Teste função decodificarCNAB($strCnab)</p>';
     echo 'TESTE 1';
     echo '<br>';
     $arrCNAB=decodificarCNAB('3201903010000014200096206760174753****3153153453JOÃO MACEDO   BAR DO JOÃO       
-    5201903010000013200556418150633123****7687145607MARIA JOSEFINALOJA DO Ó - MATRIZ');
+5201903010000013200556418150633123****7687145607MARIA JOSEFINALOJA DO Ó - MATRIZ');
 
     if(count($arrCNAB)===2){
         echo '<span class="sucesso">SUCESSO</span>';
@@ -209,7 +209,7 @@ echo 'TESTE 10';
 echo '<br>';
 echo 'TESTE 11';
     echo '<br>';
-    if($arrCNAB['0']['nome_loja']==='BAR DO JOÃO       '){
+    if($arrCNAB['1']['nome_loja']==='LOJA DO Ó - MATRIZ'){
         echo '<span class="sucesso">SUCESSO</span>';
     }else{
         echo '<span class="erro">ERRO</span>';
