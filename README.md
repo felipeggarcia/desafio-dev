@@ -6,6 +6,11 @@ O objetivo consiste em parsear [este arquivo de texto(CNAB)](https://github.com/
 # Setup
 O projeto foi escrito em php sem framework versão 7.4.29 e MySQL versão 8.0.30, foi utilizado Docker para ser facilmente configurado o ambiente.
 
+Para a aplicação funcionar corretamente é necessário fazer a importação do banco de dados no phpMyAdmin
+1. Com o docker desktop rodando execude o comando "docker-compose up -d --build"
+2. Após terminar de executar entre em localhost:8001 acesse o phpmyadmin com as seguintes credenciais: Sevidor:mysql_db Usuário:root, Senha:root
+3. Crie um schema chamado "desafio-dev", abra ele e clique no botão importação, utilize o arquivo desafio-dev-importacao.sql
+4. Agora a aplicação deve funcionar, acesse loclahost para acessar o desafio-dev
 
 # Descrição do projeto
 
