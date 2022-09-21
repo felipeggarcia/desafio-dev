@@ -1,4 +1,4 @@
-# Desafio proposto para um processo seletivo de bycoders
+# Desafio proposto por bycoders
 
 O objetivo consiste em parsear [este arquivo de texto(CNAB)](https://github.com/ByCodersTec/desafio-ruby-on-rails/blob/master/CNAB.txt) e salvar suas informações(transações financeiras) em uma base de dados a critério do candidato.
 
